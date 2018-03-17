@@ -52,6 +52,9 @@
     +perspective(300)
     @if $animation != "bounceOut"
       overflow: hidden
+    @for $i from 1 through 8
+     &.proj-#{$i}
+      background-image: url(/assets/img/work/proj-#{$i}/thumb.jpg)
       
     @media screen and (max-width: 760px)
       width: 50%
